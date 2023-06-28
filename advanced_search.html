@@ -11,14 +11,42 @@
             <li><a href="image_search.html">Image Search</a></li>
             <li><a class="active" href="advanced_search.html">Advanced Search</a></li>            
         </ul>
-        <div>
+        <div class="container">
             <form action="https://www.google.com/search">
-                <label>Find pages with...</label><br>
-                <label>all these words:</label><input type="text" name="q"><br>
-                <label>this exact word or phrase:</label><input type="text" name="q"><br>
-                <label>any of these words:</label><input type="text" name="q"><br>
-                <label>none of these words:</label><input type="text" name="q"><br>
-                <input type="submit" value="Google Search">
+                <label>Find pages with...</label>
+                <div class="row">
+                    <div class="col-25">
+                        <label>all these words:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="as_q">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label>this exact word or phrase:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="as_epq">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label>any of these words:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="as_oq">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label>none of these words:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="as_eq">
+                    </div>
+                </div>
+                <input type="submit" value="Advanced Search">
             </form>
         </div>
     </body>
