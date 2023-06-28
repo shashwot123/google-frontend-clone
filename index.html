@@ -2,19 +2,17 @@
 <html lang="en">
     <head>
         <title>Search</title>
-        <style type="text/css">
-        	a {
-        		color: black;
-        		text-decoration: underline;
-        		position: absolute; 
-        	}
-        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
     </head>
     <body>
-    	<a href="image_search.html" style="right: 20px;">Image Search</a>
-    	<a href="advanced_search.html" style="right: 130px;">Advanced Search</a>
+        <ul>
+           <li><a class="active" href="index.html">Home</a></li>
+    	   <li><a href="image_search.html">Image Search</a></li>
+    	   <li><a href="advanced_search.html">Advanced Search</a></li>
+        </ul>
         <form action="https://www.google.com/search">
-            <input type="text" name="q">
+            <input type="text" name="q"><br>
             <input type="submit" value="Google Search">
         </form>
     </body>

@@ -2,22 +2,24 @@
 <html lang="en">
     <head>
         <title>Advanced Search</title>
-        <style type="text/css">
-            a {
-                color: black;
-                text-decoration: none;
-            }
-        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
     </head>
     <body>
-        <a href="index.html">Home</a>
-        <form action="https://www.google.com/search">
-            <label>Find pages with...</label>
-            <label>all these words:</label><input type="text" name="q">
-            <label>this exact word or phrase:</label><input type="text" name="q">
-            <label>any of these words:</label><input type="text" name="q">
-            <label>none of these words:</label><input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="image_search.html">Image Search</a></li>
+            <li><a class="active" href="advanced_search.html">Advanced Search</a></li>            
+        </ul>
+        <div>
+            <form action="https://www.google.com/search">
+                <label>Find pages with...</label><br>
+                <label>all these words:</label><input type="text" name="q"><br>
+                <label>this exact word or phrase:</label><input type="text" name="q"><br>
+                <label>any of these words:</label><input type="text" name="q"><br>
+                <label>none of these words:</label><input type="text" name="q"><br>
+                <input type="submit" value="Google Search">
+            </form>
+        </div>
     </body>
 </html>
